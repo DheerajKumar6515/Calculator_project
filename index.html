@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart_Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="main">
+        <h1 class="heading">Let's Find Solution!</h1>
+        <div class="image1"><img src="c1.jpg" alt="img1"></div>
+        <div class="image2"><img src="c2.avif" alt="img1"></div>
+        <div class="calculator">
+            <input id="display" readonly>
+            <div class="keys">
+                <button class="orange" onclick="Cleardisplay()"><span>C</span></button>
+                <button onclick="Cleardisplay()">Del</button>
+                <button onclick="appendtodiv('%')">%</button>
+                <button onclick="appendtodiv('/')">/</button>
+                <button class="orange" onclick="appendtodiv('7')"><span>7</span></button>
+                <button onclick="appendtodiv('8')">8</button>
+                <button onclick="appendtodiv('9')">9</button>
+                <button onclick="appendtodiv('*')">*</button>
+                <button class="orange" onclick="appendtodiv('4')"><span>4</span></button>
+                <button onclick="appendtodiv('5')">5</button>
+                <button onclick="appendtodiv('6')">6</button>
+                <button onclick="appendtodiv('-')">-</button>
+                <button class="orange" onclick="appendtodiv('1')"><span>1</span></button>
+                <button onclick="appendtodiv('2')">2</button>
+                <button onclick="appendtodiv('3')">3</button>
+                <button onclick="appendtodiv('+')">+</button>
+                <button class="orange" onclick="appendtodiv('.')"><span>.</span></button>
+                <button onclick="appendtodiv('0')">0</button>
+                <button class="equalsign" onclick="calculate()">=</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

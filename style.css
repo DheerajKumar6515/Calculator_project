@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:aliceblue;
+}
+.calculator{
+    width: 354px;
+    background-color:black;
+    height: 547px;
+    border-radius: 23px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #0000006e;
+    z-index: 1;
+    margin-top: 30px;
+    background-color: #61a2fb;
+}
+.heading{
+    position: absolute;
+    top: 12px;
+    font-size: 76px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: math;
+    text-shadow: 3px 3px 3px lightslategray;
+}
+#display{
+    width: 83%;
+    height: 60px;
+    padding: 2px -13px;
+    margin: 42px 30px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 5px 5px 5px #00000033;
+    font-size: 44px;
+    text-align: end;
+    background-color: #9e9e9e75;
+    color: white;
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 27px;
+}
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    margin: 7px 0px;
+    font-size: 2rem;
+    background-color: #ffffffeb;
+    box-shadow: 5px 5px 5px #00000033;
+}
+.orange{
+    background-color: orange;
+}
+button:hover{
+    background-color: lightgray;
+}
+.image1{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 41px;
+    top: 82px;
+}
+.image2{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: 40px;
+    top: 207px;
+}
+
+.image1 img{
+   width: 100%;
+   mix-blend-mode: multiply;
+}
+.image2 img{
+   width: 100%;
+   mix-blend-mode: multiply;
+}
+
+@media screen and (max-width:768px) {
+    
+    .heading{
+        font-size: 62px;
+        top: 45px;
+    }
+    .calculator{
+        margin-top: 83px;
+    }
+    .image1{
+        display: none;
+    }
+    .image2{
+        display: none;
+    }
+    #main{
+        background-color: cornflowerblue;
+    }
+    
+    
+}
